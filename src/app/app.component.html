@@ -1,0 +1,29 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<hello name="{{ name }}"></hello>
+ <div> Message :{{message}} </div>
+<div>
+<label for="message-input">Message:</label>
+<input type="text" id="message-input" name="messageInput" [(ngModel)]="message"> <br>
+<label for="message-input">Angka1:</label>
+<input type="text" class="form-control form-control-sm" name="totalPresentase2"
+[ngModel]="totalPresentase2 | number:'1.0-2' " readonly><br>
+
+<label for="message-input">Angka2:</label>
+<input type="text" class="form-control form-control-sm" name="totalPresentase3"
+[ngModel]="totalPresentase3 | number:'1.0-2' " readonly><br>
+
+<label for="message-input">Angka3:</label>
+<input type="text" class="form-control form-control-sm" name="totalPresentase4"
+[ngModel]="totalPresentase4 | number:'1.0-2' " readonly><br>
+
+<label for="message-input">Angka4:</label>
+<input type="text" class="form-control form-control-sm" name="totalPresentase5"
+[ngModel]="totalPresentase5 | number:'1.0-2' " readonly><br>
+
+{{totalPresentase3 | number:'1.0-2' }} %
+
+  </div>
